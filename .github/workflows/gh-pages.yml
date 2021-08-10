@@ -22,11 +22,7 @@ jobs:
         with:
           channel: stable
 
-      - run: flutter clean;
-      - run: flutter pub get
-      - run: flutter build web
-      - run: sed -i 's/base href="\/"/base href="\/responsive_card\/"/g' build/web/index.html
-      - run: echo "Web build completed successfully"
+      - run: ./bin/build-web.sh
 
       - name: deploy to pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
