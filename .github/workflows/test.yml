@@ -13,6 +13,9 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           channel: stable
-      - run: flutter clean;
+      - run: flutter clean
+      - run: flutter config --enable-web
       - run: flutter pub get
-      - run: flutter test
+      - run: flutter packages pub get;
+      - run: flutter build web
+      - run: find build
