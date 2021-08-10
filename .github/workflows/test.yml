@@ -13,9 +13,15 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           channel: stable
+
       - run: flutter clean
       - run: flutter config --enable-web
       - run: flutter pub get
       - run: flutter packages pub get;
       - run: flutter build web
-      - run: find build
+
+      - name: deploy to pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build/web  # The folder the action should deploy.
