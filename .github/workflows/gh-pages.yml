@@ -25,9 +25,11 @@ jobs:
       - run: flutter clean;
       - run: flutter pub get
       - run: flutter build web
+      - run: sed -i 's/base href="\/"/base href="\/responsive_card\/"/g' build/web/index.html
+      - run: echo "Web build completed successfully"
 
       - name: deploy to pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: build/web # The folder the action should deploy.
+          folder: build/web  # The folder the action should deploy.
