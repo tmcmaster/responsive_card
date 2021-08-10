@@ -24,7 +24,7 @@ jobs:
 
       - run: flutter clean;
       - run: flutter pub get
-      - run: flutter build web
+      - run: flutter build web -t app/main.dart
 
       - name: deploy to pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
