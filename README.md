@@ -1,4 +1,4 @@
-# flutter_package_template
+# responsive_card
 Flutter widget testing widget for dynamically widgets at different sizes.
 
 # To change the package name
