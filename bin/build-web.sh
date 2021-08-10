@@ -1,6 +1,7 @@
 #!/bin/bash
 
 flutter clean
+flutter config --enable-web
 flutter pub get
 flutter packages pub get;
 flutter build web
