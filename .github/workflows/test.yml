@@ -16,6 +16,7 @@ jobs:
       - run: flutter clean
       - run: flutter config --enable-web
       - run: flutter pub get
-      - run: flutter packages pub get;
+      - run: flutter packages pub get
+      - run: find web
       - run: flutter build web
       - run: find build
