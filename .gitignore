@@ -34,6 +34,7 @@ doc/api/
 
 android
 ios
+macos
 
 **/*.log
 hold

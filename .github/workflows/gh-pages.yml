@@ -23,7 +23,7 @@ jobs:
           channel: stable
 
       - run: flutter pub get
-      - run: flutter build web
+      - run: flutter build web -t site/main.dart
       - run: sed -i 's/base href="\/"/base href="\/responsive_card\/"/g' build/web/index.html
 
       - name: deploy to pages

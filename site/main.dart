@@ -1,7 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_workbench/flutter_workbench.dart';
 import 'package:responsive_card/responsive_card.dart';
 
-void main() => runApp(MyApp());
+import 'shared_style.dart';
+
+//void main() => runApp(MyApp());
+
+void main() => FlutterWorkbench.runAppWidgetTester(
+      title: 'Responsive Card',
+      styles: SharedStyle.themes,
+      options: WidgetTesterOptions(
+        aspectRatio: 2 / 3,
+        columns: 2,
+      ),
+      children: [
+        MyApp(),
+        MyApp(),
+      ],
+    );
 
 class MyApp extends StatelessWidget {
   @override
