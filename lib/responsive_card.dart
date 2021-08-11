@@ -5,10 +5,22 @@ class ResponsiveCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 50,
-      height: 50,
-      color: Colors.orangeAccent,
+    final theme = Theme.of(context);
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('Hello World'),
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: theme.colorScheme.primary,
+          ),
+        ],
+      ),
     );
   }
 }
