@@ -1,3 +1,10 @@
+# When code is pushed into the master branch,
+# and the Test workflow was successful,
+# build the web version of the Flutter application,
+# and deploy it into the gh-pages branch,
+# which will then be deployed by GitHub Pages,
+# to https://tmcmaster.github.io/responsive_card
+
 name: Build & Deploy Web
 
 on:

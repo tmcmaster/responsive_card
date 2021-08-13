@@ -20,6 +20,7 @@ dev_dependencies:
   pedantic:
   lint:
   test:
+  faker:
   flutter_workbench:
     git:
       url: https://github.com/tmcmaster/flutter_workbench.git

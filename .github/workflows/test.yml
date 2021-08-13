@@ -1,3 +1,7 @@
+# When code is pushed into any branch,
+# build the Flutter application,
+# and run all of the tests.
+
 name: Test
 
 on: push
