@@ -10,7 +10,7 @@ void main() => FlutterWorkbench.runAppWidgetTester(
       styles: SharedStyle.themes,
       options: WidgetTesterOptions(
         aspectRatio: 5 / 3,
-        columns: 1,
+        columns: 2,
       ),
       children: [
         ResponsiveCard(
